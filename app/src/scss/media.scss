@@ -1,0 +1,76 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+    /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)	{
+    /**/
+}		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+    .s{
+        &-posts{
+            .post__item{
+                margin: auto;
+            }
+        }
+        &-contact{
+            form .submit{
+                width: 100%;
+            }
+        }
+    }
+    header{
+
+        .title{
+            h1{
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+    .header__links{
+        i.fa{
+            margin-left: 10px;
+        }
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    header{
+        .title{
+            h1{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img.post__image{
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+}		
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+    // * * *
+}
